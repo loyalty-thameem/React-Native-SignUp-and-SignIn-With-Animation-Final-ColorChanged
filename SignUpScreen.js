@@ -164,6 +164,14 @@ const SignUpScreen = ({navigation}) => {
         }
         </TouchableOpacity>
         </View>
+        <View style={styles.textPrivate}>
+                <Text style={styles.color_textPrivate}>
+                    By signing up you agree to our
+                </Text>
+                <Text style={[styles.color_textPrivate, {fontWeight: 'bold'}]}>{" "}Terms of service</Text>
+                <Text style={styles.color_textPrivate}>{" "}and</Text>
+                <Text style={[styles.color_textPrivate, {fontWeight: 'bold'}]}>{""}Privacy policy</Text>
+            </View>
         <View style={styles.button}>
       <LinearGradient
                     colors={['#9D9DBD', '#666699']}
@@ -248,8 +256,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10,
   },
-  textSign: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
+   textSign: {
+        fontSize: 18,
+        fontWeight: 'bold'
+    },
+    textPrivate: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        marginTop: 20
+    },
+    color_textPrivate: {
+        color: 'grey'
+    }
 });
