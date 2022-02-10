@@ -91,6 +91,9 @@ const SignInScreen = ({navigation}) => {
         }
         </TouchableOpacity>
         </View>
+        <TouchableOpacity>
+                <Text style={{color: '#05375a', marginTop:15}}>Forgot password?</Text>
+            </TouchableOpacity>
         <View style={styles.button}>
       <LinearGradient
                     colors={['#9D9DBD', '#666699']}
